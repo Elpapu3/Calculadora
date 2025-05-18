@@ -1,4 +1,5 @@
- #include <stdio.h>
+/* Nombre y apellido de los integrantes del grupo: Carlos Saca Cano - Julian Mazzone - Rodrigo Torres  */
+#include <stdio.h>
 #include <math.h>
 
 void sumaarr(int* ptr, int tam){
@@ -123,12 +124,12 @@ void sis33(double A[3][4]) {
         }
     }
 
-    // SustituciÛn hacia atr·s para obtener z, y y x
+    // Sustituci√≥n hacia atr√°s para obtener z, y y x
     double z = A[2][3];
     double y = A[1][3] - A[1][2] * z;
     double x = A[0][3] - A[0][1] * y - A[0][2] * z;
 
-    printf("\nSoluciÛn del sistema 3x3:\n");
+    printf("\nSoluci√≥n del sistema 3x3:\n");
     printf("x = %.5lf\n", x);
     printf("y = %.5lf\n", y);
     printf("z = %.5lf\n", z);
@@ -351,7 +352,7 @@ int main(){
         printf("16) Multiplicacion de escalar por vector\n");
         printf("17) Determinante de una matriz\n");
         printf("18) Inversa de una matriz\n");
-        printf("19) DivisiÛn de matrices (multiplicacion de una matriz por la inversa de otra matriz)\n");
+        printf("19) Divisi√≥n de matrices (multiplicacion de una matriz por la inversa de otra matriz)\n");
         printf("20) Ingresar un sistema de ecuaciones y resolver Sistema de 2x2\n");
         printf("21) Ingresar un sistema de ecuaciones y resolver Sistema de 3x3\n");
         printf("0)  Salir\n");
@@ -890,13 +891,13 @@ int filasB, columnasB, matrizB[10][10];
 
         case 21:{
             double A[3][4];
-            printf("Ingrese los coeficientes y tÈrminos independientes del sistema 3x3:\n");
+            printf("Ingrese los coeficientes y t√©rminos independientes del sistema 3x3:\n");
             for(int i=0; i<3; i++){
                 for(int j=0; j<4; j++){
                     if(j<3)
                         printf("Ingrese coeficiente A[%d][%d]: ", i+1, j+1);
                     else
-                        printf("Ingrese tÈrmino independiente A[%d]: ", i+1);
+                        printf("Ingrese t√©rmino independiente A[%d]: ", i+1);
                     scanf("%lf", &A[i][j]);
                 }
             }
